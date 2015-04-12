@@ -1,5 +1,6 @@
 source("init.R")
-png(filename = "plot3.png", width = 480, height = 480, units = "px")
+
+png(filename = "plot3.png", width = 480, height = 480, units = "px", bg="transparent")
 plot(data$DateTime, data$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 lines(data$DateTime, data$Sub_metering_2, col="red")
 lines(data$DateTime, data$Sub_metering_3, col="blue")
